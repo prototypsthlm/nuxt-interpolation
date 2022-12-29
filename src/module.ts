@@ -8,7 +8,12 @@ export interface ModuleOptions {
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: 'nuxt-interpolation',
-    configKey: 'nuxtInterpolation'
+    configKey: 'nuxtInterpolation',
+    // Compatibility constraints
+    compatibility: {
+      // Semver version of supported nuxt versions
+      nuxt: '^3.0.0'
+    }
   },
   defaults: {
     addPlugin: true
