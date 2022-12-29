@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/prototypsthlm/nuxt-interpolation/compare/v1.0.2...v1.0.3) (2022-12-29)
+
+
+### Bug Fixes
+
+* unify node versions ([68f8ef4](https://github.com/prototypsthlm/nuxt-interpolation/commit/68f8ef434f4265a6e59af46f00edc4d4192858ea))
+
 ## [1.0.2](https://github.com/prototypsthlm/nuxt-interpolation/compare/v1.0.1...v1.0.2) (2022-12-29)
 
 
