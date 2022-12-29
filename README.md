@@ -10,13 +10,13 @@ is `_blank`.
 
 ## Setup
 
-- Add `nuxt-interpolation` as dependency
-- Add `nuxt-interpolation` to modules section of `nuxt.config.js`
+- Add `@prototyp-stockholm/nuxt-interpolation` as dependency
+- Add `@prototyp-stockholm/nuxt-interpolation` to modules section of `nuxt.config.js`
 
 ```js
 {
   modules: [
-    ['nuxt-interpolation']
+    ['@prototyp-stockholm/nuxt-interpolation']
   ]
 }
 ```
