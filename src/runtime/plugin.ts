@@ -1,18 +1,20 @@
 import { defineNuxtPlugin, useRouter } from '#app'
 
 const navigate = (event: Event) => {
-  if (!(event instanceof MouseEvent)) {
+  if (!(event instanceof MouseEvent) || !(event.currentTarget instanceof HTMLAnchorElement)) {
     return
   }
 
-  const router = useRouter()
+  const href = event.currentTarget.getAttribute('href')
 
-  const href = (event.currentTarget as HTMLAnchorElement).getAttribute('href') ?? null
-  if (href && href[0] === '/') {
+  if (href?.startsWith('/')) {
     event.preventDefault()
-    event.metaKey
-      ? window.open(href, '_blank', 'noopener')
-      : router.push(href)
+
+    if (event.metaKey) {
+      window.open(href, '_blank', 'noopener')
+    } else {
+      useRouter().push(href)
+    }
   }
 }
 
@@ -56,6 +58,6 @@ export default defineNuxtPlugin(({ vueApp }) => {
     unmounted: (element) => {
       const links = element.getElementsByTagName('a')
       removeListeners(links)
-    }
+    },
   })
 })
