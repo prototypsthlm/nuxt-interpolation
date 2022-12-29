@@ -1,0 +1,8 @@
+.eslintrc.js
+.github
+.gitignore
+.npmignore
+.nvmrc
+.prettierrc.json
+CHANGELOG.md
+LICENSE
