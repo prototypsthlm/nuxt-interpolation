@@ -7,7 +7,7 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxt-interpolation',
+    name: '@prototyp-stockholm/nuxt-interpolation',
     configKey: 'nuxtInterpolation',
     // Compatibility constraints
     compatibility: {
