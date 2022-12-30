@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/prototypsthlm/nuxt-interpolation/compare/v1.0.4...v1.0.5) (2022-12-30)
+
+
+### Bug Fixes
+
+* run dev:prepare before ci and lower again node versions ([ed6c19c](https://github.com/prototypsthlm/nuxt-interpolation/commit/ed6c19c9814cb00cd39b2b0eac2bb09e35154876))
+
 ## [1.0.4](https://github.com/prototypsthlm/nuxt-interpolation/compare/v1.0.3...v1.0.4) (2022-12-29)
 
 
