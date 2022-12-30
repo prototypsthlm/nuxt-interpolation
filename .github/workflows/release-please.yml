@@ -19,10 +19,12 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - uses: actions/setup-node@v1
         with:
-          node-version: 18.12
+          node-version: 14.18.0
           registry-url: 'https://registry.npmjs.org'
         if: ${{ steps.release.outputs.release_created }}
       - run: npm ci
+        if: ${{ steps.release.outputs.release_created }}
+      - run: npm run dev:prepare
         if: ${{ steps.release.outputs.release_created }}
       - run: npm publish
         env:
